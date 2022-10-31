@@ -1,0 +1,452 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 80%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.header {
+  height: 50rem;
+  margin-bottom: 15rem;
+}
+.header .img_fondo {
+  width: 100%;
+  position: absolute;
+}
+.header .header_main {
+  position: absolute;
+  width: 100%;
+}
+
+.header_main img {
+  width: 8%;
+  margin: 10rem auto;
+}
+.header_main h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.header_main p {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.3rem;
+  color: hsl(202deg, 5%, 59%);
+  margin-bottom: 6rem;
+}
+.header_main .download {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  color: #FFF;
+  font-size: 2rem;
+  justify-content: center;
+  gap: 3rem;
+}
+@media (max-width: 1440px) {
+  .header_main .download {
+    width: 35%;
+    justify-content: space-around;
+  }
+}
+.header_main .btn {
+  padding: 1.5rem 2.5rem;
+  border-radius: 3rem;
+}
+.header_main .btn:visited {
+  color: #FFF;
+}
+.header_main .btn_verde {
+  background: hsl(171deg, 66%, 44%);
+  color: #FFF;
+}
+.header_main .btn_azul {
+  background: hsl(233deg, 100%, 69%);
+  color: #FFF;
+}
+@media (max-width: 375px) {
+  .header_main img {
+    width: 40%;
+    margin: 8rem auto;
+  }
+  .header_main h1 {
+    font-size: 3.5rem;
+  }
+  .header_main p {
+    width: 90%;
+    font-size: 1.7rem;
+    margin-bottom: 6rem;
+  }
+  .header_main .download {
+    width: 90%;
+    flex-direction: column;
+  }
+  .header_main .btn_verde {
+    color: #FFF;
+  }
+  .header_main .btn_azul {
+    margin-top: 2rem;
+    color: #FFF;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 375px) {
+  .main {
+    padding-top: 12rem;
+  }
+}
+
+.snippets h2 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+.snippets p {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.1rem;
+  color: hsl(202deg, 5%, 59%);
+  margin-bottom: 6rem;
+}
+@media (max-width: 375px) {
+  .snippets p {
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+.snippets .menu_snippets {
+  display: flex;
+  gap: 6rem;
+}
+.snippets .menu_snippets figure {
+  width: 50%;
+}
+@media (max-width: 375px) {
+  .snippets .menu_snippets {
+    flex-direction: column;
+  }
+  .snippets .menu_snippets figure {
+    width: 90%;
+    margin: 0rem auto;
+  }
+}
+.snippets .text_snippets {
+  display: flex;
+  flex-direction: column;
+}
+
+.segmento_snippets h3 {
+  font-size: 2rem;
+  margin-top: 12rem;
+}
+.segmento_snippets p {
+  width: 60%;
+  text-align: left;
+  margin: 0;
+}
+@media (max-width: 1440px) {
+  .segmento_snippets h3 {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 375px) {
+  .segmento_snippets h3 {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .segmento_snippets p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.clipboard h2 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+.clipboard p {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.1rem;
+  color: hsl(202deg, 5%, 59%);
+  margin-bottom: 6rem;
+}
+@media (max-width: 1440px) {
+  .clipboard p {
+    width: 55%;
+  }
+}
+@media (max-width: 375px) {
+  .clipboard {
+    margin-top: 10rem;
+  }
+  .clipboard p {
+    width: 90%;
+  }
+}
+.clipboard img {
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 375px) {
+  .clipboard img {
+    width: 100%;
+  }
+}
+
+.workflow h2 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+.workflow p {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.1rem;
+  color: hsl(202deg, 5%, 59%);
+  margin-bottom: 6rem;
+}
+@media (max-width: 375px) {
+  .workflow p {
+    width: 90%;
+  }
+}
+
+.flujos {
+  width: 80%;
+  margin: 15rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 375px) {
+  .flujos {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 3rem;
+  }
+}
+
+.flujo {
+  display: flex;
+  flex-direction: column;
+}
+.flujo h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  text-align: center;
+}
+.flujo p {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.1rem;
+  color: hsl(202deg, 5%, 59%);
+  margin-bottom: 6rem;
+  margin: 0;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .flujo {
+    margin-top: 2rem;
+  }
+}
+
+.icon {
+  width: 15%;
+  height: 7rem;
+  align-self: center;
+}
+
+.marcas {
+  display: flex;
+  justify-content: space-around;
+}
+.marcas img {
+  width: 10%;
+}
+@media (max-width: 375px) {
+  .marcas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .marcas img {
+    width: 50%;
+    margin-top: 8rem;
+  }
+}
+
+.clipboardMac {
+  margin-top: 10rem;
+}
+.clipboardMac h2 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+.clipboardMac p {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.1rem;
+  color: hsl(202deg, 5%, 59%);
+  margin-bottom: 6rem;
+  color: hsl(210deg, 10%, 33%);
+  width: 50%;
+}
+.clipboardMac .download {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #FFF;
+  font-size: 2rem;
+}
+.clipboardMac .btn {
+  padding: 1.5rem 2.5rem;
+  border-radius: 3rem;
+}
+.clipboardMac .btn:visited {
+  color: #FFF;
+}
+.clipboardMac .btn_verde {
+  background: hsl(171deg, 66%, 44%);
+  color: #FFF;
+}
+.clipboardMac .btn_azul {
+  background: hsl(233deg, 100%, 69%);
+  color: #FFF;
+}
+@media (max-width: 1440px) {
+  .clipboardMac .download {
+    width: 40%;
+  }
+}
+@media (max-width: 375px) {
+  .clipboardMac .download {
+    width: 90%;
+    flex-direction: column;
+  }
+  .clipboardMac p {
+    width: 90%;
+  }
+  .clipboardMac .btn_verde {
+    color: #FFF;
+  }
+  .clipboardMac .btn_azul {
+    margin-top: 2rem;
+    color: #FFF;
+  }
+}
+
+.footer {
+  margin-top: 10rem;
+  padding-top: 3rem;
+  background: hsl(202deg, 21%, 93%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .piePag {
+  display: flex;
+}
+
+.piePag .icon_footer {
+  width: 25%;
+}
+.piePag .icon_footer img {
+  width: 20%;
+  margin: 0 auto;
+}
+.piePag .nav_piePag {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.piePag .nav_piePag a {
+  font-size: 1.5rem;
+  color: hsl(202deg, 5%, 59%);
+}
+.piePag .redes {
+  margin-right: 2rem;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 1440px) {
+  .piePag .redes a {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .piePag {
+    display: flex;
+    flex-direction: column;
+  }
+  .piePag .icon_footer {
+    width: 100%;
+  }
+  .piePag .nav_piePag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .piePag .nav_piePag a {
+    margin-top: 3rem;
+    color: hsl(210deg, 10%, 33%);
+  }
+  .piePag .redes {
+    padding-top: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .piePag .redes a {
+    margin-right: 0rem;
+  }
+}

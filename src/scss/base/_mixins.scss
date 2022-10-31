@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+@mixin telefono {
+    @media (max-width: v.$telefono){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin titulo {
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+@mixin tituloParrafo {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.1rem;
+    color: v.$grayBlue;
+    margin-bottom: 6rem;
+}

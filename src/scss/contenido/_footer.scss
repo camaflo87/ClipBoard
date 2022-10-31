@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    margin-top: 10rem;
+    padding-top: 3rem;
+    background: v.$grayBlueClaro;
+    display: flex;
+    flex-direction: column; 
+    .piePag{
+        display: flex;
+    }
+    justify-content: center;
+}
+
+.piePag{
+  .icon_footer{
+    width: 25%;
+    img{
+        width: 20%;
+        margin: 0 auto;
+    }
+ 
+  }  
+
+  .nav_piePag{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    a{
+        font-size: 1.5rem;
+        color: v.$grayBlue;
+    }  
+  }
+
+  .redes{
+    margin-right: 2rem;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;    
+  }
+
+  @include m.desktop {
+    .redes{
+      a{
+        margin-right: 2rem;
+      }  
+    }
+  }
+
+  //Ajustar a una pantalla de movil
+  @include m.telefono{
+      display: flex;
+      flex-direction: column;
+
+      .icon_footer{
+        width: 100%;   
+      }  
+
+      .nav_piePag{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        a{
+          margin-top: 3rem;
+          color: v.$darkGray;
+        }
+      }
+
+      .redes{  
+        padding-top: 3rem;      
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+          margin-right: 0rem;
+        }
+      }
+  }
+}
